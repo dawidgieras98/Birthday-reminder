@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./List.css";
+import "./List.css";
 const List = ({ people }) => {
   return (
     <>
@@ -7,7 +7,7 @@ const List = ({ people }) => {
         const { id, name, image, age } = person;
         return (
           <article key={id} className="person">
-            <img src={image} alr="profile picture" />
+            <img src={image} alt="profile picture" />
             <div>
               <h4>{name}</h4>
               <p>{age} years old</p>
