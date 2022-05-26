@@ -1,4 +1,4 @@
-export default [
+export default dataPeople = [
   {
     id: 1,
     name: "Dawid",

@@ -1,6 +1,69 @@
-body {
+:root {
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --violet: #8351cd;
+}
+
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:gray;
+}
+body {
+  font-family: "Segoe UI", Roboto, Oxygen;
+  background: var(--violet);
+  line-height: 1.5;
+  font-size: 0.87rem;
+}
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vw;
+  margin: 5rem 0;
+  max-width: 450px;
+  background: white;
+  border-radius: 0.25rem;
+  padding: 1.5rem 2rem;
+}
+.person {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+.person img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.person h4 {
+  margin-bottom: 0.35rem;
+}
+
+.container button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  background: var(--violet);
+  margin: 2rem auto 0 auto;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  letter-spacing: 0.1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
 }
