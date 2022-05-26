@@ -7,7 +7,7 @@ const List = ({ people }) => {
         const { id, name, image, age } = person;
         return (
           <article key={id} className="person">
-            <img src={image} alt="profile picture" />
+            <img src={image} alt="Man that has a birthday today" />
             <div>
               <h4>{name}</h4>
               <p>{age} years old</p>
